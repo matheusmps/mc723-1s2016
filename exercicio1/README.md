@@ -1,1 +1,1 @@
-Exercício 1: Compilação e Otimização
+# Exercício 1: Compilação e Otimização
