@@ -23,3 +23,17 @@ Executamos agora esses passos de duas maneiras diferentes, primeiro através de 
 |            | Script   | Makefile |
 |------------|----------|----------|
 | Tempo Real | 0m0.381s | 0m0.387s |
+
+**PARTE 2**
+
+Agora alteramos o nosso código para que calcule quantos números primos existem entre 1 e n, sendo n um valor passado pela linha de comando. Medimos então o tempo utilizando um e dois arquivos fontes, com **n = 10000**, e obtivemos os seguintes resultados:
+
+|            | 1 Arquivo Fonte | 2 Arquivos Fontes |
+|------------|-----------------|-------------------|  
+|   Tempo    |    0m0.025s     |     0m0.022s      |
+
+Podemos ver que os tempos ainda assim foram bem similares em ambos os casos o que mostra mais uma vez que o tempo de execução não deve ser alterado.
+
+Agora modificamos mais um pouco o nosso código, fazendo com que o laço da função primo varra somente os números ímpares. Isso faz com que o nosso conjunto de testes caia pela metade. Medimos novamente o tempo, utilizando o mesmo valor de n e chegamos a um valor médio de **0m0.012s**, ou seja, aproximadamente metade do valor encontrado anteriormente, resultado esperado já que temos metade do conjunto de testes anterior.
+Além disso, podemos ver utilizando o gprof que a função primo é a que gasta muito mais tempo,, dessa forma esta função deveria ser paralalelizada de modo a economizar tempo de execução.
+
