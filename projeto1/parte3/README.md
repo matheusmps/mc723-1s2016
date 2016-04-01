@@ -72,8 +72,16 @@ Para que possamos descobrir mais fatos interessantes analisaremos com mais detal
 ### Genetic
 
 ![grafico-genetic-tp](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/genetic-tp.png)
+
+Este gráfico compara o tempo de processamento levado pelos processadores das diferentes máquinas que foram utilizadas no benchmark Genetic. Aqui os processadores estão ordenados como explicado acima, com os considerados melhores processadores mais a esquerda. 
+
+Do gráfico podemos notar algumas coisas. Primeiramente vemos que o desempenho dos processadores foi pouco a pouco piorando, como esperado, dos processadores melhores para os piores. Apesar disso, vemos que o melhor resultado foi obtido pelo processador i5-4590 com 3.30Ghz do Pedro Meireles que superou até mesmo o processador i7-4702MQ 2.20GHz do Renan, que teoricamente seria um modelo melhor, mas possui um clock menor o que provavelmente afetou no caso deste benchmark. O pior desempenho ficou com a Raspberry Pi, o que também era esperado, pelo baixo poder de processamento da placa.
+
+Apesar destes pontos, vemos que os resultados, excluindo a Raspberry Pi, foram muito semelhantes entre todos os processadores. Isso mostra que se talvez tivessemos escolhido um conjunto de testes melhor as diferenças entre os processadores ficaria mais clara.
+
 ![grafico-genetic-pd](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/genetic-pd.png)
 
+Aqui temos o gráfico que avalia a performance do disco para algumas das máquinas. Como nem todas as máquinas tinham informações sobre o tipo de disco fica difícil fazer uma análise mais detalhada. Contudo, podemos ver aqui, como comentado anteriormente que a memória flash da Raspberry Pi teve um resultado muito superior às outras máquinas. Ao mesmo tempo, vemos que a máquina *débios* que possui uma combinação entre SSD (memória flash) e um disco normal não obteve um resultado tão bom. Isso ocorreu provavelmente por que esta fração SSD está separada para funções do sistema operacional, fazendo com que nesse caso o desempenho do disco fique semelhante à das outras máquinas.
 
 ### Gnuplot
 
