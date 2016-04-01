@@ -81,13 +81,24 @@ Apesar destes pontos, vemos que os resultados, excluindo a Raspberry Pi, foram m
 
 ![grafico-genetic-pd](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/genetic-pd.png)
 
-Aqui temos o gráfico que avalia a performance do disco para algumas das máquinas. Como nem todas as máquinas tinham informações sobre o tipo de disco fica difícil fazer uma análise mais detalhada. Contudo, podemos ver aqui, como comentado anteriormente que a memória flash da Raspberry Pi teve um resultado muito superior às outras máquinas. Ao mesmo tempo, vemos que a máquina *débios* que possui uma combinação entre SSD (memória flash) e um disco normal não obteve um resultado tão bom. Isso ocorreu provavelmente por que esta fração SSD está separada para funções do sistema operacional, fazendo com que nesse caso o desempenho do disco fique semelhante à das outras máquinas.
+Aqui temos o gráfico que avalia a performance do disco para algumas das máquinas. Como nem todas as máquinas tinham informações sobre o tipo de disco fica difícil fazer uma análise mais detalhada. Contudo, podemos ver aqui, como comentado anteriormente, que a memória flash da Raspberry Pi teve um resultado muito superior às outras máquinas. Ao mesmo tempo, vemos que a máquina *débios* que possui uma combinação entre SSD (memória flash) e um disco normal não obteve um resultado tão bom. Isso ocorreu provavelmente por que esta fração SSD está separada para funções do sistema operacional, fazendo com que nesse caso o desempenho do disco fique semelhante à das outras máquinas.
 
 ### Gnuplot
 
 ![grafico-gnuplot](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/gnuplot.png)
 
+Aqui vemos os gráficos relacionados ao tempo de processamento e ao cpu-clock ao utilizarmos o benchmark Gnuplot. Aqui vemos que novamente a Raspberry Pi obteve o pior desempenho. Além disso, podemos notar mais alguns pontos:
+
+- Os dados informados para o processador i7-2670QM 2.20GHz (Pedro Grijó) muito provavelmente estão errados, já que os valores obtidos nesse caso não chegam nem próximos aos obtidos por máquinas semelhantes.
+- Podemos ver como a curva de desempenho acompanha a curva do cpu-clock calculado. Interessante ver que com isso processadores considerados melhores, como o i5 do Pedro Meireles que teve o melhor resultado no Genetic, teve tempos piores que outras máquinas consideradas piores como i3-3110M 2.4Ghz do Matheus Ruivo. Seria necessária uma análise mais detalhada para entender as causas dessas diferenças.
+
 ### FFTW
 
 ![grafico-fftw](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/fftw.png)
+
+Aqui vemos que para o benchmark FFTW quase todas as máquinas tiveram um desempenho do programa DFT1D melhor que quando executando o DFT1D_IO, mesmo com a diferença grande entre os parâmetros de entrada (70.000.000 para o primeiro e 3.000.000 para o segundo). Isso já havia sido notado durante a primeira parte do projeto e aqui só mostra mais uma vez como o desempenho do disco pode influenciar consideravelmente na execução de um programa (lembrando que a diferença entre eles é que o DFT1D_IO além dos cálculos cria um arquivo com os resultados obtidos).
+
+Além disso é estranho o resultado obtido pelo processador i3-3110M 2.4Ghz do Matheus Ruivo, que teve um desempenho muito pior ao executar o DFT1D. Se voltarmos a tabela vemos que tivemos um alto desvio padrão nesse caso. Como foi calculada uma média de somente 5 casos, podemos suspeitar que este resultado ocorreu em razão de algum fator externo queinfluenciou algum dos testes, o que aumentou de forma considerável a média do tempo de execução. 
+
+## Conclusão
 
