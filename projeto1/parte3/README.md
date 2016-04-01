@@ -102,3 +102,5 @@ Além disso é estranho o resultado obtido pelo processador i3-3110M 2.4Ghz do M
 
 ## Conclusão
 
+Podemos concluir que de forma geral os dados obtidos nos dão índicios de que os modelos de processadores mais novos têm um desempenho melhor que os mais antigos. Isso parece óbvio mas temos que levar em consideração que não sabemos exatamente quais foram as condições de teste em cada máquina, e existem vários fatores que podem ter afetado os nossos resultados além dos processadores, como: os diferentes tipos de memória RAM, diferentes sistemas operacionais ou até mesmo se os testes foram feitos enquanto as máquinas executavam algum outro tipo de processamento, por isso não podemos dizer com certeza que eles tiveram um desempenho melhor. 
+
