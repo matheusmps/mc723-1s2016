@@ -71,14 +71,15 @@ Para que possamos descobrir mais fatos interessantes analisaremos com mais detal
 
 ### Genetic
 
-![grafico-genetic]()
+![grafico-genetic-tp](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/genetic-tp.png)
+![grafico-genetic-pd](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/genetic-pd.png)
 
 
 ### Gnuplot
 
-![grafico-gnuplot]()
+![grafico-gnuplot](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/gnuplot.png)
 
 ### FFTW
 
-![grafico-fftw]()
+![grafico-fftw](https://github.com/matheusmps/mc723-1s2016/blob/master/projeto1/parte3/fftw.png)
 
